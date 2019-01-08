@@ -1,0 +1,17 @@
+{
+    "publicPath": "/",
+    "extraBabelPlugins": [
+        ["import", {
+           "libraryName": "antd",
+           "libraryDirectory": "es",
+           "style": true
+        }]
+    ],
+    "disableCSSModules": true,
+    "proxy": {
+	    "/a-my-web": {
+	      "target": "http://144.120.251.33:28293/",
+	      "changeOrigin": true
+	    }
+    }
+}
